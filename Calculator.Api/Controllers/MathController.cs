@@ -6,7 +6,7 @@ namespace Calculator.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[ApiKey]
+    [ApiKey]
     public class MathController : ControllerBase
     {
         private readonly ICalculatorService _calculatorService;

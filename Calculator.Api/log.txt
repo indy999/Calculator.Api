@@ -56,3 +56,107 @@ System.NotImplementedException: TEST EXCEPTION
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2022-05-08 21:41:50.932 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/api/math/add?value1=1&value2=1 - - - 500 - text/plain;+charset=utf-8 244.3991ms
+2022-05-09 18:09:47.224 +01:00 [INF] Starting up
+2022-05-09 18:09:53.489 +01:00 [INF] Now listening on: https://localhost:7262
+2022-05-09 18:09:53.491 +01:00 [INF] Now listening on: http://localhost:5262
+2022-05-09 18:09:53.494 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-09 18:09:53.494 +01:00 [INF] Hosting environment: Development
+2022-05-09 18:09:53.494 +01:00 [INF] Content root path: C:\GIT\Calculator.Api\Calculator.Api\
+2022-05-09 18:09:54.564 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/swagger/index.html - -
+2022-05-09 18:09:55.023 +01:00 [INF] HTTP GET /swagger/index.html responded 200 in 354.2777 ms
+2022-05-09 18:09:55.034 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/swagger/index.html - - - 200 - text/html;charset=utf-8 477.7422ms
+2022-05-09 18:09:55.034 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - -
+2022-05-09 18:09:55.040 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.5625ms
+2022-05-09 18:09:55.601 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/swagger/v1/swagger.json - -
+2022-05-09 18:09:55.689 +01:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 87.6559 ms
+2022-05-09 18:09:55.690 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.4512ms
+2022-05-09 18:10:41.044 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/api/math/add?value1=1&value2=1 - -
+2022-05-09 18:10:41.054 +01:00 [INF] Executing endpoint 'Calculator.Api.Controllers.MathController.Add (Calculator.Api)'
+2022-05-09 18:10:41.102 +01:00 [INF] Route matched with {action = "Add", controller = "Math"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(Int32, Int32) on controller Calculator.Api.Controllers.MathController (Calculator.Api).
+2022-05-09 18:10:41.170 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2022-05-09 18:10:41.191 +01:00 [INF] Executed action Calculator.Api.Controllers.MathController.Add (Calculator.Api) in 71.5939ms
+2022-05-09 18:10:41.192 +01:00 [INF] Executed endpoint 'Calculator.Api.Controllers.MathController.Add (Calculator.Api)'
+2022-05-09 18:10:41.192 +01:00 [INF] HTTP GET /api/math/add responded 200 in 144.3121 ms
+2022-05-09 18:10:41.203 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/api/math/add?value1=1&value2=1 - - - 200 - application/json;+charset=utf-8 158.1875ms
+2022-05-09 18:10:41.442 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/favicon.ico - -
+2022-05-09 18:10:41.443 +01:00 [INF] HTTP GET /favicon.ico responded 404 in 0.6062 ms
+2022-05-09 18:10:41.444 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/favicon.ico - - - 404 0 - 1.2686ms
+2022-05-09 18:10:50.861 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7262/api/math/add?value1=1&value2=1 - -
+2022-05-09 18:10:50.862 +01:00 [INF] Executing endpoint 'Calculator.Api.Controllers.MathController.Add (Calculator.Api)'
+2022-05-09 18:10:50.863 +01:00 [INF] Route matched with {action = "Add", controller = "Math"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(Int32, Int32) on controller Calculator.Api.Controllers.MathController (Calculator.Api).
+2022-05-09 18:10:50.865 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2022-05-09 18:10:50.891 +01:00 [INF] Executed action Calculator.Api.Controllers.MathController.Add (Calculator.Api) in 28.6275ms
+2022-05-09 18:10:50.891 +01:00 [INF] Executed endpoint 'Calculator.Api.Controllers.MathController.Add (Calculator.Api)'
+2022-05-09 18:10:50.892 +01:00 [INF] HTTP GET /api/math/add responded 200 in 29.2996 ms
+2022-05-09 18:10:50.892 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7262/api/math/add?value1=1&value2=1 - - - 200 - application/json;+charset=utf-8 30.4788ms
+2022-05-09 18:12:16.092 +01:00 [INF] Starting up
+2022-05-09 18:12:19.168 +01:00 [INF] Now listening on: https://localhost:7262
+2022-05-09 18:12:19.170 +01:00 [INF] Now listening on: http://localhost:5262
+2022-05-09 18:12:19.173 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-09 18:12:19.173 +01:00 [INF] Hosting environment: Development
+2022-05-09 18:12:19.173 +01:00 [INF] Content root path: C:\GIT\Calculator.Api\Calculator.Api\
+2022-05-09 18:12:19.964 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/swagger/index.html - -
+2022-05-09 18:12:20.388 +01:00 [INF] HTTP GET /swagger/index.html responded 200 in 318.2387 ms
+2022-05-09 18:12:20.397 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - -
+2022-05-09 18:12:20.400 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/swagger/index.html - - - 200 - text/html;charset=utf-8 443.3780ms
+2022-05-09 18:12:20.409 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.3857ms
+2022-05-09 18:12:20.878 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/swagger/v1/swagger.json - -
+2022-05-09 18:12:21.023 +01:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 144.3169 ms
+2022-05-09 18:12:21.023 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 145.0762ms
+2022-05-09 18:12:28.013 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7262/api/math/add?value1=1&value2=1 - -
+2022-05-09 18:12:28.022 +01:00 [INF] Executing endpoint 'Calculator.Api.Controllers.MathController.Add (Calculator.Api)'
+2022-05-09 18:12:28.057 +01:00 [INF] Route matched with {action = "Add", controller = "Math"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(Int32, Int32) on controller Calculator.Api.Controllers.MathController (Calculator.Api).
+2022-05-09 18:12:28.236 +01:00 [INF] Executed action Calculator.Api.Controllers.MathController.Add (Calculator.Api) in 174.3991ms
+2022-05-09 18:12:28.237 +01:00 [INF] Executed endpoint 'Calculator.Api.Controllers.MathController.Add (Calculator.Api)'
+2022-05-09 18:12:28.238 +01:00 [ERR] HTTP GET /api/math/add responded 500 in 223.0664 ms
+System.NotImplementedException: TEST
+   at Calculator.Api.Controllers.MathController.Add(Int32 value1, Int32 value2) in C:\GIT\Calculator.Api\Calculator.Api\Controllers\MathController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-09 18:12:28.485 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: TEST
+   at Calculator.Api.Controllers.MathController.Add(Int32 value1, Int32 value2) in C:\GIT\Calculator.Api\Calculator.Api\Controllers\MathController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-09 18:12:28.492 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7262/api/math/add?value1=1&value2=1 - - - 500 - text/plain;+charset=utf-8 478.8837ms
+2022-05-09 18:35:58.871 +01:00 [INF] Starting up
+2022-05-09 18:36:01.742 +01:00 [INF] Now listening on: https://localhost:7262
+2022-05-09 18:36:01.747 +01:00 [INF] Now listening on: http://localhost:5262
+2022-05-09 18:36:01.753 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-09 18:36:01.753 +01:00 [INF] Hosting environment: Development
+2022-05-09 18:36:01.753 +01:00 [INF] Content root path: C:\GIT\Calculator.Api\Calculator.Api\
+2022-05-09 18:36:02.993 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/swagger/index.html - -
+2022-05-09 18:36:03.322 +01:00 [INF] HTTP GET /swagger/index.html responded 200 in 259.2705 ms
+2022-05-09 18:36:03.363 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - -
+2022-05-09 18:36:03.369 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/swagger/index.html - - - 200 - text/html;charset=utf-8 383.4125ms
+2022-05-09 18:36:03.369 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.3509ms
+2022-05-09 18:36:03.798 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7262/swagger/v1/swagger.json - -
+2022-05-09 18:36:03.913 +01:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 115.4949 ms
+2022-05-09 18:36:03.914 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7262/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.0898ms

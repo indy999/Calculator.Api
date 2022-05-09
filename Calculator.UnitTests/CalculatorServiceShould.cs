@@ -14,8 +14,9 @@ namespace Calculator.UnitTests
             calculatorService = new CalculatorService();
         }
 
-        [TestCase(1,2,3)]
-        public async Task ShouldAddValuesSuccessfully(int value1, int value2, int expectedValue)
+        [TestCase(1, 2, 3)]
+        [TestCase(10, 2, 12)]
+        public async Task AddValuesSuccessfully(int value1, int value2, int expectedValue)
         {
             var result = await calculatorService.Add(value1, value2);
 
@@ -23,7 +24,8 @@ namespace Calculator.UnitTests
         }
 
         [TestCase(5, 2, 3)]
-        public async Task ShouldSubtractValuesSuccessfully(int value1, int value2, int expectedValue)
+        [TestCase(10, 3, 7)]
+        public async Task SubtractValuesSuccessfully(int value1, int value2, int expectedValue)
         {
             var result = await calculatorService.Subtract(value1, value2);
 
@@ -31,7 +33,8 @@ namespace Calculator.UnitTests
         }
 
         [TestCase(10, 2, 20)]
-        public async Task ShouldMultiplySuccessfully(int value1, int value2, int expectedValue)
+        [TestCase(100, 3, 300)]
+        public async Task MultiplySuccessfully(int value1, int value2, int expectedValue)
         {
             var result = await calculatorService.Multiply(value1, value2);
 
@@ -40,7 +43,7 @@ namespace Calculator.UnitTests
 
         [TestCase(20, 5, 4)]
         [TestCase(15, 7, 2)]
-        public async Task ShouldDivideSuccessfully(int value1, int value2, int expectedValue)
+        public async Task DivideSuccessfully(int value1, int value2, int expectedValue)
         {
             var result = await calculatorService.Divide(value1, value2);
 

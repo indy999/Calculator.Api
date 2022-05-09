@@ -1,6 +1,5 @@
 ﻿using FluentAssertions;
 using Microsoft.AspNetCore.Mvc.Testing;
-//using Microsoft.VisualStudio.TestPlatform.TestHost;
 using NUnit.Framework;
 using System.Net;
 
@@ -9,9 +8,10 @@ namespace Calculator.AcceptanceTests
     [TestFixture]
     public class CalculatorApiShould
     {
-        private WebApplicationFactory<Program> _factory;
-        private HttpClient _client;
+        private WebApplicationFactory<Program>? _factory;
+        private HttpClient? _client;
         private readonly string apiKey = "OnSzhN8q8ebQZys";
+
         [OneTimeSetUp]
         public void Setup()
         {
@@ -20,7 +20,7 @@ namespace Calculator.AcceptanceTests
         }
 
         [Test]
-        public async Task ShouldAddValuesSuccessfully()
+        public async Task AddValuesSuccessfully()
         {
             var request = new HttpRequestMessage(HttpMethod.Get, "/api/math/add?value1=1&value2=1");
             request.Headers.Add("Authorization", apiKey);
@@ -33,7 +33,7 @@ namespace Calculator.AcceptanceTests
         }
 
         [Test]
-        public async Task ShouldSubtractValuesSuccessfully()
+        public async Task SubtractValuesSuccessfully()
         {
             var request = new HttpRequestMessage(HttpMethod.Get, "/api/math/subtract?value1=10&value2=2");
             request.Headers.Add("Authorization", apiKey);
@@ -47,7 +47,7 @@ namespace Calculator.AcceptanceTests
 
         
         [Test]
-        public async Task ShouldMultiplyValuesSuccessfully()
+        public async Task MultiplyValuesSuccessfully()
         {
             var request = new HttpRequestMessage(HttpMethod.Get, "/api/math/multiply?value1=10&value2=2");
             request.Headers.Add("Authorization", apiKey);
@@ -60,7 +60,7 @@ namespace Calculator.AcceptanceTests
         }
 
         [Test]
-        public async Task ShouldDivideValuesSuccessfully()
+        public async Task DivideValuesSuccessfully()
         {
             var request = new HttpRequestMessage(HttpMethod.Get, "/api/math/divide?value1=10&value2=2");
             request.Headers.Add("Authorization", apiKey);

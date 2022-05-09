@@ -7,10 +7,10 @@ namespace Calculator.Api.Attributes
     [AttributeUsage(validOn: AttributeTargets.Class)]
     public class ApiKeyAttribute : Attribute, IAsyncActionFilter
     {
-        private const string APIKEYNAME = "Authorization";
+        private const string APIKEYHEADERNAME = "Authorization";
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            if (!context.HttpContext.Request.Headers.TryGetValue(APIKEYNAME, out var extractedApiKey))
+            if (!context.HttpContext.Request.Headers.TryGetValue(APIKEYHEADERNAME, out var extractedApiKey))
             {
                 context.Result = new UnauthorizedResult();
                 return;
